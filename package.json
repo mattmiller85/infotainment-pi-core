@@ -1,0 +1,20 @@
+{
+  "name": "infotainment-pi-core",
+  "version": "1.0.0",
+  "description": "Core types for infotainment-pi",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register src/**/*tests.ts"
+  },
+  "author": "Matt Miller",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "mocha": "^3.4.2",
+    "ts-node": "^3.0.4",
+    "typescript": "^2.3.3"
+  }
+}
