@@ -1,5 +1,5 @@
 export enum MessageType{
-    greetingFromServer,
-    askForAllTiles,
-    allTiles
+    greetingFromServer = 1,
+    askForAllTiles = 2,
+    allTiles = 3
 }

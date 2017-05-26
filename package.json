@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "mocha -r ts-node/register src/**/*tests.ts"
+    "test": "mocha -w -r ts-node/register src/**/*tests.ts"
   },
   "author": "Matt Miller",
   "license": "ISC",
