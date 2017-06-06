@@ -15,6 +15,10 @@ export class MessageReader {
                 return Object.assign(new core.ReturnAllTilesMessage(), unreadMessage);
             case core.MessageType.askForAllTiles:
                 return Object.assign(new core.GetAllTilesMessage(), unreadMessage);
+            case core.MessageType.getTileById:
+                return Object.assign(new core.GetTileByIdMessage(), unreadMessage);
+            case core.MessageType.returnTile:
+                return Object.assign(new core.ReturnTileMessage(), unreadMessage);
         }
         throw new Error(`Unhandled message type ${core.MessageType[unreadMessage.type]}!`);
     }
