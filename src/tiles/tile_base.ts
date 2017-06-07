@@ -3,7 +3,7 @@ export abstract class TileBase{
     id: number;
     abstract get type(): TileType;
     get routing(): string {
-        return `tile${this.id}`;
+        return `tile/${this.id}`;
     };
     name: string;
     description: string;
