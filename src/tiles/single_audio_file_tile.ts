@@ -3,13 +3,10 @@ import { TileBase } from './tile_base';
 
 export class SingleAudioFileTile extends TileBase{    
     constructor(){
-        super();
+        super(TileType.single_audio_file);
+        this.grabs_audio = true;
+        this.grabs_video = true;        
     }
-
-    get type(): TileType { return TileType.single_audio_file; };
-
-    get grabs_audio(): boolean { return true; };
-    get grabs_video(): boolean { return true; };
-
+    
     path_to_audio: string;
 }

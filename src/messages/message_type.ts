@@ -6,5 +6,6 @@ export enum MessageType{
     returnTile = 5,
     playAudioFile = 6,
     pauseAudioFile = 7,
-    stopAudioFile = 8
+    stopAudioFile = 8,
+    songStatus = 9
 }

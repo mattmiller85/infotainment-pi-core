@@ -19,6 +19,14 @@ export class MessageReader {
                 return Object.assign(new core.GetTileByIdMessage(), unreadMessage);
             case core.MessageType.returnTile:
                 return Object.assign(new core.ReturnTileMessage(), unreadMessage);
+            case core.MessageType.playAudioFile:
+                return Object.assign(new core.PlayAudioFileMessage(), unreadMessage);
+            case core.MessageType.pauseAudioFile:
+                return Object.assign(new core.PauseCurrentAudioFileMessage(), unreadMessage);
+            case core.MessageType.stopAudioFile:
+                return Object.assign(new core.StopCurrentAudioFileMessage(), unreadMessage);
+            case core.MessageType.songStatus:
+                return Object.assign(new core.SongStatusMessage(), unreadMessage);
         }
         throw new Error(`Unhandled message type ${core.MessageType[unreadMessage.type]}!`);
     }

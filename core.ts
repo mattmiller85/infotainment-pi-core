@@ -9,6 +9,7 @@ export { ReturnTileMessage } from './src/messages/return_tile_message';
 export { PlayAudioFileMessage } from './src/messages/play_audio_file_message';
 export { PauseCurrentAudioFileMessage } from './src/messages/pause_current_audio_file_message';
 export { StopCurrentAudioFileMessage } from './src/messages/stop_current_audio_file_message';
+export { SongStatusMessage } from './src/messages/song_status_message';
 export { TileBase } from './src/tiles/tile_base';
 export { TileType } from './src/tiles/tile_type';
 export { SingleAudioFileTile } from './src/tiles/single_audio_file_tile';
