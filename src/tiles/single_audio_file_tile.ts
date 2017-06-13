@@ -9,4 +9,5 @@ export class SingleAudioFileTile extends TileBase{
     }
     
     path_to_audio: string;
+    duration_seconds: number = 0;
 }

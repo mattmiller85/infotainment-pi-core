@@ -13,3 +13,4 @@ export { SongStatusMessage } from './src/messages/song_status_message';
 export { TileBase } from './src/tiles/tile_base';
 export { TileType } from './src/tiles/tile_type';
 export { SingleAudioFileTile } from './src/tiles/single_audio_file_tile';
+export { DigitalOBDIISensorTile } from './src/tiles/digital_obd_II_sensor_tile';
