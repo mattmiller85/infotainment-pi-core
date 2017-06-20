@@ -7,5 +7,8 @@ export enum MessageType{
     playAudioFile = 6,
     pauseAudioFile = 7,
     stopAudioFile = 8,
-    songStatus = 9
+    songStatus = 9,
+    obdReading = 10,
+    addUpdateTile = 11,
+    tileUpdated = 12
 }

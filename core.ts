@@ -14,3 +14,6 @@ export { TileBase } from './src/tiles/tile_base';
 export { TileType } from './src/tiles/tile_type';
 export { SingleAudioFileTile } from './src/tiles/single_audio_file_tile';
 export { DigitalOBDIISensorTile } from './src/tiles/digital_obd_II_sensor_tile';
+export { OBDReadingMessage } from './src/messages/obd_reading_message';
+export { AddUpdateTileMessage } from './src/messages/add_update_tile_message';
+export { TileUpdatedMessage } from './src/messages/tile_updated_message';

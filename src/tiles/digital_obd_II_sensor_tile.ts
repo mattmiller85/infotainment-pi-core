@@ -10,7 +10,7 @@ export class DigitalOBDIISensorTile extends TileBase{
     
     sensor_number: number;
     sensor_code: string;
-
+    
     calculate_value(raw_value: any): number 
     {
         return raw_value;

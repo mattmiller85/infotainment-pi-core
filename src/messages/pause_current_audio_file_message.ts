@@ -1,5 +1,5 @@
 import { MessageBase } from './message_base';
-import { MessageType } from "./message_type";
+import { MessageType } from './message_type';
 
 export class PauseCurrentAudioFileMessage extends MessageBase
 {     

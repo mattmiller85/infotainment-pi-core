@@ -27,6 +27,12 @@ export class MessageReader {
                 return Object.assign(new core.StopCurrentAudioFileMessage(), unreadMessage);
             case core.MessageType.songStatus:
                 return Object.assign(new core.SongStatusMessage(), unreadMessage);
+            case core.MessageType.obdReading:
+                return Object.assign(new core.OBDReadingMessage(), unreadMessage);
+            case core.MessageType.addUpdateTile:
+                return Object.assign(new core.AddUpdateTileMessage(), unreadMessage);
+            case core.MessageType.tileUpdated:
+                return Object.assign(new core.TileUpdatedMessage(), unreadMessage);
         }
         throw new Error(`Unhandled message type ${core.MessageType[unreadMessage.type]}!`);
     }
