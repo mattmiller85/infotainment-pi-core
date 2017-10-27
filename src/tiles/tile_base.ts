@@ -1,4 +1,4 @@
-import { DigitalOBDIISensorTile, SingleAudioFileTile } from '../../core';
+import { DigitalOBDIISensorTile, SingleAudioFileTile, CastTile } from '../../core';
 import { TileType } from './tile_type';
 export abstract class TileBase{
     constructor(public type: TileType){
@@ -17,6 +17,8 @@ export abstract class TileBase{
                 ret = new SingleAudioFileTile();
             case TileType.digital_obd_ii_sensor:
                 ret = new DigitalOBDIISensorTile();
+            case TileType.cast:
+                ret = new CastTile();
         }
         if(ret && fromTile) {
             ret = Object.assign(ret, fromTile);
